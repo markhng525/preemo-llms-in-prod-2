@@ -1,0 +1,6 @@
+[submodule "lm-evaluation-harness"]
+	path = lm-evaluation-harness
+	url = https://github.com/EleutherAI/lm-evaluation-harness
+[submodule "helm"]
+	path = helm
+	url = https://github.com/stanford-crfm/helm
