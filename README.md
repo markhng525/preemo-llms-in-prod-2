@@ -26,6 +26,10 @@ git clone https://huggingface.co/google/flan-ul2
 ```
 
 ## Fine-tuning on flan-ul2
+To launch a fine-tuning job using _Deepspeed ZeRO3_ (without CPU offloading) run the below command:
+```bash
+accelerate launch --config_file ./finetune/launcher_configs/accelerate_zero3_no_offload_config.yaml ./finetune/zero3_gsm8k.py <model-path>
+```
 
 ## Running Evals:
 In order to conduct evaluations on the _GSM8K_ dataset run the below script.
